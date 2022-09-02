@@ -13,5 +13,16 @@ public class Personaje {
     public int getEdad(){
         return edad;
     }
-    public boolean setEdad
+    public boolean setEdad(int edad){
+        if (0<edad) {
+            if (edad<120) {
+                return true;
+            } else{
+                return false;
+            }
+        } else{
+            return false;
+        }
+    }
+    
 }
