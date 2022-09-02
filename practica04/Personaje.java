@@ -1,6 +1,9 @@
-public class Personaje {
+public class Personaje{
     private String nombre;
-    private int edad = 0;
+    private int edad;
+    public Personaje(String n){
+        edad=0;
+    }
     public void setNombre(String n){
         this.nombre = n;
     }
@@ -24,5 +27,5 @@ public class Personaje {
             return false;
         }
     }
-    
+
 }
