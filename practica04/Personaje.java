@@ -2,9 +2,6 @@
 public class Personaje {
     private String nombre;
     private int edad;
-    public static void main(String[] args) {
-        
-    }
     public void setNombre(String n){
         this.nombre = n;
     }
