@@ -18,7 +18,7 @@ public class Personaje{
         return edad;
     }
     public boolean setEdad(int edad){
-        if (0<edad) {
+        if (edad>0) {
             if (edad<120) {
                 this.edad=edad;
                 return true;
