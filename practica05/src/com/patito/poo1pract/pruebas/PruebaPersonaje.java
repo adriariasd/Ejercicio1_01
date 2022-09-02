@@ -1,3 +1,5 @@
+package com.patito.poo1pract.pruebas;
+import com.patito.poo1pract.personajes.Personaje;
 public class PruebaPersonaje {
     public static void main(String[] args) {
         Personaje alumno = new Personaje("Kal El");
