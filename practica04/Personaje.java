@@ -1,7 +1,6 @@
-//inicio 8:37
 public class Personaje {
     private String nombre;
-    private int edad;
+    private int edad = 0;
     public void setNombre(String n){
         this.nombre = n;
     }
@@ -11,4 +10,8 @@ public class Personaje {
     public void saludar(){
         System.out.println("Hola Alumno de POO" + nombre);
     }
+    public int getEdad(){
+        return edad;
+    }
+    public boolean setEdad
 }
