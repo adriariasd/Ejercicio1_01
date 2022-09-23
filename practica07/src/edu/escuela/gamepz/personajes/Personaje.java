@@ -29,7 +29,7 @@ public class Personaje{
 		return edad;
 	}
 	public String getDetalle(){
-		return nombre+"\t"+edad+" ";
+		return nombre+"\t"+edad+"\t";
 	}
 }
 
