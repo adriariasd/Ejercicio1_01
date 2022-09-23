@@ -32,6 +32,3 @@ public class Personaje{
 		return nombre+"\t"+edad+"\t";
 	}
 }
-
-//javac -d ../classes edu/escuela/gamepz/pruebas/PruebaPersonaje.java
-//java -cp ..\classes edu\escuela\gamepz\pruebas\PruebaPersonaje 
