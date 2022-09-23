@@ -2,7 +2,7 @@ package edu.escuela.gamepz.personajes;
 
 public class Personaje{
 	private String nombre;
-	private int edad;
+	private int edad=0;
 	public void setNombre(String nombre){
 		int length = nombre.length();
 		if (length>5 && length<25){
@@ -29,7 +29,7 @@ public class Personaje{
 		return edad;
 	}
 	public String getDetalle(){
-		return nombre+"\t"+edad;
+		return nombre+"\t"+edad+" ";
 	}
 }
 
