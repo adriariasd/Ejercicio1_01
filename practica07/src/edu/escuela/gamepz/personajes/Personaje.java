@@ -10,7 +10,7 @@ public class Personaje{
 		setEdad(edad);
 	}
 	}
-	public Personaje (String nombre, int edad){
+	public Personaje (String nombre){
 		this.nombre = nombre;
 		setEdad(edad);
 	}
