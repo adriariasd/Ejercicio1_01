@@ -8,8 +8,8 @@ public class PruebaCiclos {
     int n=0;
     int m=0;
     while (n>=m){
-        n=(int)Math.random();
-        m=(int)Math.random();
+        n=(int)Math.random()*100;
+        m=(int)Math.random()*100;
     }
     System.out.println("n = "+n);
     System.out.println("m = "+m);
