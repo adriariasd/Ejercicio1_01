@@ -35,6 +35,6 @@ public class PruebaPersonaje{
 		System.out.println(per03.getDetalle());
 		System.out.println(per04.getDetalle());
 		System.out.println(per05.getDetalle());
-
+		
 	}
 } 
