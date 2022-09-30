@@ -6,7 +6,9 @@ public class Serie {
         int x;
         if (num<10) {
             x = 100;
-            num = (int)(Math.random()*x*10);
+            do {
+                num = (int)(Math.random()*x*10);
+            } while (num<100);
             return num;
         } else {
             do {
