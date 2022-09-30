@@ -16,7 +16,7 @@ public class TestSeries {
 
         int n = s.genNumero(100);
 
-        //s.fibo(n);
+        System.out.println(n);
 
         int p = s.fiboN(n);
 
