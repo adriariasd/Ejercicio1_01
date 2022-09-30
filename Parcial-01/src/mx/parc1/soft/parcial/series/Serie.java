@@ -1,6 +1,9 @@
 package mx.parc1.soft.parcial.series;
 public class Serie {
-    public void Serie(){
+    int i[];
+    int x = 1;
+    int y = 1;
+    public Serie(){
         
     }
     public int genNumero(int num){
