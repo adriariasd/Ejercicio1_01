@@ -14,7 +14,7 @@ public class TestSeries {
 
         //System.out.println(o);
 
-        int n = s.genNumero(100);
+        int n = s.genNumero(10);
 
         System.out.println(n);
 
