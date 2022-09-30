@@ -9,7 +9,9 @@ public class Serie {
             num = (int)(Math.random()*x*10);
             return num;
         } else {
-            num = (int)(Math.random()*num*10);
+            do {
+                num = (int)(Math.random()*num*10);
+            } while (num<10);
             return num;
         }
     }
@@ -17,11 +19,11 @@ public class Serie {
         int x=1;
         int y=1;
         int r=0;
-        for (int i = 0; i < num; i++) {
+        for (int i = 1; i < num; i++) {
             r=x+y;
             x=y;
             y=r;
         }
-        return r;
+        return x;
     }    
 }
