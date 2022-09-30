@@ -19,7 +19,12 @@ public class Serie {
         }
     }
     public int fiboN(int num){
-        
+        int x=1;
+        int y=1;
+        int r;
+        for (int i = 0; i < num; i++) {
+            
+        }
         return num;
     }    
 }
