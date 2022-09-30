@@ -1,13 +1,11 @@
 package mx.parc1.soft.parcial.series;
 public class Serie {
-    private int x=1;
-    private int y=1;
-    private int r;
-    int a[] = {x,y,r};
     public Serie(){
-        for (int i = 0; i < 1000000; i++) {
-            
-        }
+        int num;
+        int x=1;
+        int y=1;
+        int r;
+        int a[];
     }
     public int genNumero(int num){
         int x;
@@ -21,6 +19,7 @@ public class Serie {
         }
     }
     public int fiboN(int num){
+        
         return num;
     }    
 }
