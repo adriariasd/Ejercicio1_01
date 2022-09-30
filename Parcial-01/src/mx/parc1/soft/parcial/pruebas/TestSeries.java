@@ -1,5 +1,5 @@
-package mx.prac1.soft.parcial.pruebas;
-import mx.prac1.soft.parcial.series.*;
+package mx.parc1.soft.parcial.pruebas;
+import mx.parc1.soft.parcial.series.*;
 public class TestSeries {
 
     public static void main(String[] args) {

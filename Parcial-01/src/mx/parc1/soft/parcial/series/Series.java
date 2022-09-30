@@ -1,7 +1,7 @@
-package mx.prac1.soft.parcial.series;
+package mx.parc1.soft.parcial.series;
 public class Series {
     public void Serie(){
-
+        
     }
     public int genNumero(int num){
         int x;
@@ -15,6 +15,6 @@ public class Series {
         }
     }
     public int fiboN(int num){
-
+        return num;
     }
 }
