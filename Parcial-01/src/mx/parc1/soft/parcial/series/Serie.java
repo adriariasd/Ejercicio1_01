@@ -21,10 +21,12 @@ public class Serie {
     public int fiboN(int num){
         int x=1;
         int y=1;
-        int r;
+        int r=0;
         for (int i = 0; i < num; i++) {
-            
+            r=x+y;
+            x=y;
+            y=r;
         }
-        return num;
+        return r;
     }    
 }
