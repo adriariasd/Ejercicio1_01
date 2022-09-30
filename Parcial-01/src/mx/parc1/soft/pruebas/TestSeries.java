@@ -4,19 +4,19 @@ public class TestSeries {
 
         Serie s = new Serie();
 
-        int m = s.genNumero(100);
+        //int m = s.genNumero(100);
 
-        s.primos(m);
+        //s.primos(m);
 
-        int o = s.primoN(m/10);
+        //int o = s.primoN(m/10);
 
-        System.out.println(o);
+        //System.out.println(o);
 
         int n = s.genNumero(100);
 
         s.fibo(n);
 
-        int p = s.fiboN(3, 11);
+        int p = s.fiboN(3);
 
         System.out.println(p);
 
