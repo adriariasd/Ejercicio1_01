@@ -1,5 +1,5 @@
 package mx.parc1.soft.parcial.series;
-public class Series {
+public class Serie {
     public void Serie(){
         
     }
@@ -16,5 +16,5 @@ public class Series {
     }
     public int fiboN(int num){
         return num;
-    }
+    }    
 }
