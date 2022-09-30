@@ -1,10 +1,11 @@
 package mx.parc1.soft.parcial.series;
 public class Serie {
-    int a[];
-    private int x,y,r;
-    
+    private int x=1;
+    private int y=1;
+    private int r;
+    int a[] = {x,y,r};
     public Serie(){
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < 1000000; i++) {
             
         }
     }
