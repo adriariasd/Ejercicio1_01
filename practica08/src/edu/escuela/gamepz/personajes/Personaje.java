@@ -23,6 +23,11 @@ public class Personaje{
 			this.vida = vida;
 			return true;
 		}else{
+			if (vida<0) {
+				vida=0;
+			} else {
+				vida=99;
+			}
 			return false;
 		} 
 	}
@@ -39,6 +44,12 @@ public class Personaje{
 		setVida(vida-1);
 	}
 	public void decVida(int dec){
-		
+		setVida(vida-dec);
+	}
+	public void addVida(){
+		setVida(vida+1);
+	}
+	public void addVida(int add){
+		setVida(vida+add);
 	}
 }
