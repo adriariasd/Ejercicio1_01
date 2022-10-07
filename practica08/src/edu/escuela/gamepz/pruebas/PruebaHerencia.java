@@ -1,6 +1,4 @@
 package edu.escuela.gamepz.pruebas;
-import java.util.Random;
-
 import edu.escuela.gamepz.personajes.*;
 import edu.escuela.gamepz.personajes.buenos.*;
 import edu.escuela.gamepz.personajes.malos.*;

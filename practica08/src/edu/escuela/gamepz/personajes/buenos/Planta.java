@@ -26,7 +26,7 @@ public class Planta extends Personaje{
 		if (escudo=='A') {
             super.decVida(dec*2);
         } else {
-            super.decVida();
+            super.decVida(dec);
         }
 	}
     public void addVida(){

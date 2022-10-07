@@ -24,7 +24,7 @@ public class Personaje{
 			return true;
 		}else{
 			if (vida<0) {
-				vida=0;
+				vida=0;//cuando se hace la resta y daria negativo o mayor a 99 deberia de ser el valor inicial, para eso se puede poner un if en add vida y decvida
 			} else {
 				vida=99;
 			}

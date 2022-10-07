@@ -27,7 +27,7 @@ public class Zombie extends Personaje{
         }
 	}
     public void addVida(){
-		if (ataque==false) {
+		if (ataque==false) {//
         } else {
             super.addVida(3);
         }
