@@ -6,6 +6,7 @@ import edu.escuela.gamepz.personajes.buenos.*;
 import edu.escuela.gamepz.personajes.malos.*;
 public class PruebaHerencia {
     public static void main(String[] args) {
+        int x;
         Personaje per01 = new Personaje("David", 100);
         Personaje per02 = new Personaje("Bianca");
         Planta plan01 = new Planta("Fabian", 10, 'B');
@@ -19,7 +20,7 @@ public class PruebaHerencia {
             per01, per02, plan01, plan02, plan03, plan04, zom01, zom02, zom03};
         for (Personaje tmp : personajes) {
             tmp.getDetalle();
-            int x = (int)Math.random()*100;
+            x = (int)Math.random()*100;
             if (tmp instanceof Planta) {
                 System.out.println("Soy planta"+tmp.getEscudo());
             }
