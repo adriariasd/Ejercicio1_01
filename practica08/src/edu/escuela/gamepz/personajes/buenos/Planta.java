@@ -16,10 +16,32 @@ public class Planta extends Personaje{
         this(nombre, 3, 'A');
     }
     public void decVida(){
-		super.setVida(vida-1);
+		if (escudo=='A') {
+            super.decVida(2);
+        } else {
+            super.decVida();
+        }
 	}
 	public void decVida(int dec){
-		setVida(vida-dec);
+		if (escudo=='A') {
+            super.decVida(dec*2);
+        } else {
+            super.decVida();
+        }
+	}
+    public void addVida(){
+		if (escudo=='A') {
+            super.addVida(2);
+        } else {
+            super.addVida();
+        }
+	}
+	public void addVida(int add){
+		if (escudo=='A') {
+            super.addVida(add*2);
+        } else {
+            super.addVida();
+        }
 	}
     public String getDetalle(){
 		return super.getDetalle()+" "+escudo;
