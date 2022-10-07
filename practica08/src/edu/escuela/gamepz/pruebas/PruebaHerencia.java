@@ -13,5 +13,7 @@ public class PruebaHerencia {
         Zombie zom01 = new Zombie("Armando", 80, false);
         Zombie zom02 = new Zombie("Josseline", true);
         Zombie zom03 = new Zombie("Eduardo");
+        Personaje[] personajes;
+        
     }
 }
