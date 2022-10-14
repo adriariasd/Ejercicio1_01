@@ -17,14 +17,15 @@ public class Casa {
         return (int)x;
     }
     public boolean equals(Object o){
-        Casa p = (Casa) o;
-        if (p.equals(tipo.p) && ){
-            return true;
+        if (o != null && o instanceof Casa){
+            Casa p = (Casa) o;
+            if (tipo.equals(p.tipo) && costo.equals(p.costo)){
+                return true;
+            }
         }
-    return false;
+        return false;
     }
     public String toString(){
         return tipo+" "+hab+" "+costo;
-    }
     }
 }
