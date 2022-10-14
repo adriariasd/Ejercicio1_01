@@ -1,5 +1,4 @@
 package mx.desasof.casas;
-
 public class Casa {
     private String tipo;
     private int hab;

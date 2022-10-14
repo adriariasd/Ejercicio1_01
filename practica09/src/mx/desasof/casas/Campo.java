@@ -1,5 +1,4 @@
 package mx.desasof.casas;
-
 public class Campo extends Casa{
     float[] piscina = new float[2];
     public Campo(String tipo, int hab, float costo, float x, float y){
@@ -19,6 +18,6 @@ public class Campo extends Casa{
         return super.equals(ob) && ob instanceof Campo; 
     }
     public String toString(){
-        return super.toString()+((int)piscina[0])+((int)piscina[1]);
+        return super.toString()+" "+(piscina[0])+" "+(piscina[1]);
     }
 }
