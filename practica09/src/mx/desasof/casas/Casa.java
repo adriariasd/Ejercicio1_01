@@ -11,6 +11,19 @@ public class Casa {
     }
     public Casa(String tipo){
         this(tipo, 2, 2000000f);
+    }
+    public int hashCode(){
+        x = (int)costo;
 
+        return (int)x;
+    }
+    public boolean equals(){
+        if (tipo == costo){
+            return true;
+        }
+    return false;
+    public toString(){
+        return tipo+" "+hab+" "+costo;
+    }
     }
 }
