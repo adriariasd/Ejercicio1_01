@@ -16,11 +16,13 @@ public class Casa {
         int x = (int)costo;
         return (int)x;
     }
-    public boolean equals(Objeto ob){
-        if (ob.tipo == costo){
+    public boolean equals(Object o){
+        Casa p = (Casa) o;
+        if (p.equals(tipo.p) && ){
             return true;
         }
     return false;
+    }
     public String toString(){
         return tipo+" "+hab+" "+costo;
     }
