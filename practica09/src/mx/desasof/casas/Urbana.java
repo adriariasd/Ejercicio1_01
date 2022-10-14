@@ -13,6 +13,6 @@ public class Urbana extends Casa{
         return super.hashCode()*banios*23;
     }
     public boolean equals(Object o){
-        return super.equals() && o instanceof Urbana;
+        return super.equals(o) && o instanceof Urbana;
     }
 }
