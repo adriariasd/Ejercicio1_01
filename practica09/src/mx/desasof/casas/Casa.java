@@ -13,16 +13,15 @@ public class Casa {
         this(tipo, 2, 2000000f);
     }
     public int hashCode(){
-        x = (int)costo;
-
+        int x = (int)costo;
         return (int)x;
     }
-    public boolean equals(){
-        if (tipo == costo){
+    public boolean equals(Objeto ob){
+        if (ob.tipo == costo){
             return true;
         }
     return false;
-    public toString(){
+    public String toString(){
         return tipo+" "+hab+" "+costo;
     }
     }
