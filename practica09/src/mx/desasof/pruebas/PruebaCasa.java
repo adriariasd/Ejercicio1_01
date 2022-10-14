@@ -14,5 +14,11 @@ public class PruebaCasa {
             new Urbana("Residencia", 5),
         };
     int i = 0;
+    while (i<casas.length){
+        for (Casa c : casas) {
+            System.out.println(c);
+        }
+        i++;
+    }
     }
 }
