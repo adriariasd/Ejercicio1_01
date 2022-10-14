@@ -15,4 +15,7 @@ public class Urbana extends Casa{
     public boolean equals(Object o){
         return super.equals(o) && o instanceof Urbana;
     }
+    public String toString(){
+        return super.toString()+" "+banios;
+    }
 }
