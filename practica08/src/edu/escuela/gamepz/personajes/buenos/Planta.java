@@ -22,9 +22,9 @@ public class Planta extends Personaje{
             super.decVida();
         }
 	}
-	public void decVida(int dec){
-		if (escudo=='A') {
-            super.decVida(dec*2);
+	public void decVida(int dec){ 
+		if (escudo=='A') {         //int x = (escudo == 'A')? dec*2 : dec;
+            super.decVida(dec*2);  //super.decVida(x)
         } else {
             super.decVida(dec);
         }

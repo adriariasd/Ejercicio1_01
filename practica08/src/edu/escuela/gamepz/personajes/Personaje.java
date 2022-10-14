@@ -19,7 +19,7 @@ public class Personaje{
 		}
 	}
 	public boolean setVida(int vida){
-		if (vida>=0 && vida<99){
+		if (vida>=0 && vida<100){
 			this.vida = vida;
 			return true;
 		}else{
