@@ -11,7 +11,7 @@ public class PruebaCasa {
             new Urbana("Residencia",3, 2500000, 2),
             new Casa("Estandar"),
             new Campo("Cazador",4,15000,3f,5f),
-            new Urbana("Residencia", 5),
+            new Urbana("Residencia", 5)
         };
     int i = 0;
     while (i<casas.length){
