@@ -36,10 +36,10 @@ public abstract class Personaje{
 	public int getVida(){
 		return vida;
 	}
-	public String getDetalle(){
+	public String toString(){
 		return nombre+"\t"+vida+"\t";
 	}
-	
+
 	public abstract void decVida();
 	public abstract void decVida(int dec);
 	public abstract void addVida();
