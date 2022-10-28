@@ -45,4 +45,7 @@ public class Zombie extends Personaje implements Muerto{
     public boolean getAtaque(){
         return ataque;
     }
+    public void comer(){
+        System.out.println("Come cerebros");
+    }
 }
