@@ -28,7 +28,7 @@ public class Zombie extends Personaje implements Muerto{
         }
 	}
     public void addVida(){
-		if (ataque==false) {//
+		if (ataque==false) {
         } else {
             setVida(vida+3);
         }

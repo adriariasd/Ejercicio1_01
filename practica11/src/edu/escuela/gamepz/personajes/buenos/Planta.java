@@ -29,7 +29,7 @@ public class Planta extends Personaje{
 		setVida(vida+escudo.getNivel()*add);
 	}
     public String toString(){
-		return super.toString()+" "+escudo;
+		return super.toString()+" "+escudo.getNivel();
 	}
     public Escudo getEscudo(){
         return escudo;
