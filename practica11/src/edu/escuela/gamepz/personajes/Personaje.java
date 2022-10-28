@@ -1,8 +1,7 @@
 package edu.escuela.gamepz.personajes; 
-
-public class Personaje{
+public abstract class Personaje{
 	private String nombre;
-	private int vida=0;
+	protected int vida=0;
 	public Personaje (String nombre){
 		this.nombre = nombre;
 		setVida(3);
@@ -40,16 +39,10 @@ public class Personaje{
 	public String getDetalle(){
 		return nombre+"\t"+vida+"\t";
 	}
-	public void decVida(){
-		setVida(vida-1);
-	}
-	public void decVida(int dec){
-		setVida(vida-dec);
-	}
-	public void addVida(){
-		setVida(vida+1);
-	}
-	public void addVida(int add){
-		setVida(vida+add);
-	}
+	
+	public abstract void decVida();
+	public abstract void decVida(int dec);
+	public abstract void addVida();
+	public abstract void addVida(int add);
+
 }

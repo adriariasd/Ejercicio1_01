@@ -17,30 +17,30 @@ public class Planta extends Personaje{
     }
     public void decVida(){
 		if (escudo=='A') {
-            super.decVida(2);
+            setVida(vida-2);
         } else {
-            super.decVida();
+            setVida(vida-1);
         }
 	}
 	public void decVida(int dec){ 
 		if (escudo=='A') {         //int x = (escudo == 'A')? dec*2 : dec;
-            super.decVida(dec*2);  //super.decVida(x)
+            setVida(vida-(dec*2));  //super.decVida(x)
         } else {
-            super.decVida(dec);
+            setVida(vida-dec);
         }
 	}
     public void addVida(){
 		if (escudo=='A') {
-            super.addVida(2);
+            setVida(vida + 2);
         } else {
-            super.addVida();
+            setVida(vida+1);
         }
 	}
 	public void addVida(int add){
 		if (escudo=='A') {
-            super.addVida(add*2);
+            setVida(vida+(add*2));
         } else {
-            super.addVida(add);
+            setVida(vida+add);
         }
 	}
     public String getDetalle(){
