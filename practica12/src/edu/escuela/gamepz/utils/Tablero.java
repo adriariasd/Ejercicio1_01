@@ -12,5 +12,11 @@ public class Tablero {
             System.out.println(y);
             x++;
         }
+        System.out.println("Fin * * * Contenido del arreglo en Tablero\n");
+    }
+    public void instertar(Personaje p, int pos) throws PersException{
+        if (0>pos || pos>MAX_SIZE){
+
+        }
     }
 }
