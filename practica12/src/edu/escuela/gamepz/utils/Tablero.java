@@ -8,7 +8,7 @@ public class Tablero {
         System.out.println("\nInicio * * * Contenido del arreglo en Tablero");
         int x = 0;
         for (Personaje p : personajes) {
-            String y = (personajes[x]==null)? x+"- - -" : ""+x + p;
+            String y = (personajes[x]==null)? x+" - - -" :x+" " + p;
             System.out.println(y);
             x++;
         }
