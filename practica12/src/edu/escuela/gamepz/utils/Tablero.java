@@ -15,14 +15,14 @@ public class Tablero {
         System.out.println("Fin * * * Contenido del arreglo en Tablero\n");
     }
     public static void insertar(Personaje p, int pos) throws PersException{
-        if (0>pos || pos>MAX_SIZE){
+        if (0>pos || pos>=MAX_SIZE){
             throw new PersException("Fuera de rango", pos);
         } else{
             personajes[pos] = p;
         }
     }
     public static void borrar(int pos) throws PersException{
-        if (0>pos || pos>MAX_SIZE){
+        if (0>pos || pos>=MAX_SIZE){
             throw new PersException("Fuera de rango", pos);
         } 
         if (personajes[pos]==null){
