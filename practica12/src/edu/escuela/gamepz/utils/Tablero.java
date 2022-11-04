@@ -14,9 +14,18 @@ public class Tablero {
         }
         System.out.println("Fin * * * Contenido del arreglo en Tablero\n");
     }
-    public void instertar(Personaje p, int pos) throws PersException{
+    public void insertar(Personaje p, int pos) throws PersException{
         if (0>pos || pos>MAX_SIZE){
-
+            throw new PersException("Fuera de rango", pos);
+        } else{
+            personajes[pos] = p;
+        }
+    }
+    public void borrar(int pos) throws PersException{
+        if (0>pos || pos>MAX_SIZE){
+            throw new PersException("Fuera de rango", pos);
+        } else{
+            ;
         }
     }
 }
