@@ -19,7 +19,20 @@ public class PruebaTablero {
         };
         for (Personaje p : datos) {
             int pos = (int)(Math.random()*20-5);
-            insertar(p,pos);
+            try{
+                Tablero.insertar(p,pos);
+            } catch (PersException pe){
+                System.err.println(pe.getMessage()+" "+pe.pos);
+            }
         }
+        for (int i = 0; i < Tablero.MAX_SIZE; i++) {
+            int x = (int)Math.random()*20-5;
+            try{
+                Tablero.borrar(x);
+            } catch (PersException pe){
+                System.err.println(pe.getMessage()+" "+pe.pos);
+            }
+        }
+        Tablero.mostrar();
     }
 }
