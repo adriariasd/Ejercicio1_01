@@ -19,6 +19,7 @@ public class PruebaTablero {
         };
         for (Personaje p : datos) {
             int n = (int)(Math.random()*20-5);
+            System.out.println(p.getNombre()+" "+n);
             try{
                 Tablero.insertar(p,n);
             } catch (PersException pe){
