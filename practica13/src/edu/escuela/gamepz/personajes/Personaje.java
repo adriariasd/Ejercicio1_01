@@ -1,14 +1,22 @@
-package edu.escuela.gamepz.personajes; 
-public abstract class Personaje{
+package edu.escuela.gamepz.personajes;
+import java.text.DecimalFormat;
+public abstract class Personaje implements Comparable{
 	private String nombre;
 	protected int vida=0;
+	private float size;
 	public Personaje (String nombre){
 		this.nombre = nombre;
 		setVida(3);
+		size = 0.0f;
 	}
-	public Personaje (String nombre, int vida){
+	public Personaje (String nombre, int vida, float size){
 		this.nombre = nombre;
 		setVida(vida);
+		if(size == 0.0f){
+			this.size = genSize();
+		} else{
+			this.size = Math.round(size)/100;
+		}
 	}
 	public void setNombre(String nombre){
 		int length = nombre.length();
@@ -39,7 +47,12 @@ public abstract class Personaje{
 	public String toString(){
 		return nombre+"\t"+vida+"\t";
 	}
-
+	public float genSize(){
+		float size = (float)Math.random()*10;
+		DecimalFormat df = new DecimalFormat("#.00");
+		size = Float.valueOf(df.format(size));
+		return size;
+	}
 	public abstract void decVida();
 	public abstract void decVida(int dec);
 	public abstract void addVida();
