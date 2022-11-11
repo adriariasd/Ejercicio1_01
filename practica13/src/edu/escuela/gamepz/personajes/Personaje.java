@@ -48,7 +48,7 @@ public abstract class Personaje implements Comparable<Personaje>{
 		return size;
 	}
 	public String toString(){
-		return nombre+"\t"+vida+"\t";
+		return nombre+"\t"+vida+"\t"+size;
 	}
 	public float genSize(){
 		float size = (float)Math.random()*10;
