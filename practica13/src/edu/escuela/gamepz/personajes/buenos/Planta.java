@@ -4,7 +4,7 @@ import edu.escuela.gamepz.utils.*;
 public class Planta extends Personaje{
     Escudo escudo;
     public Planta(String nombre, int vida, Escudo escudo){
-        super(nombre, vida);
+        super(nombre, vida, 0.0f);
         this.escudo = escudo;
     }
     public Planta(String nombre, Escudo escudo){
