@@ -44,6 +44,9 @@ public abstract class Personaje implements Comparable<Personaje>{
 	public int getVida(){
 		return vida;
 	}
+	public float getSize(){
+		return size;
+	}
 	public String toString(){
 		return nombre+"\t"+vida+"\t";
 	}
