@@ -4,7 +4,6 @@ import edu.escuela.gamepz.personajes.buenos.*;
 import edu.escuela.gamepz.personajes.malos.*;
 import edu.escuela.gamepz.utils.*;
 import static edu.escuela.gamepz.utils.Escudo.*;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
