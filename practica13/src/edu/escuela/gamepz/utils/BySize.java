@@ -12,6 +12,6 @@ public class BySize implements Comparator<Personaje> {
         if(p1.getVida() == p2.getVida()){
             return 0;
         }
-        return p1.getVida() - p2.getVida();
+        return p2.getVida() - p1.getVida();
     }
 }
