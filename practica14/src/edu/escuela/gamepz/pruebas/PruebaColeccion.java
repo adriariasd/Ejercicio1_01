@@ -71,15 +71,15 @@ public class PruebaColeccion {
         }
     }
     private static void guardarObjetos(Collection c){
-        for (Object o : c) {
-            try{
-                FileOutputStream f = new FileOutputStream("datArbol.ser");
-                ObjectOutputStream s = new ObjectOutputStream (f);
+        try{
+            FileOutputStream f = new FileOutputStream("datArbol.ser");
+            ObjectOutputStream s = new ObjectOutputStream (f);
+            for (Object o : c) {
                 s.writeObject (o);
-                s.close();
-            }catch(IOException e){
-                e.printStackTrace ();
             }
+            s.close();
+        } catch(IOException e){
+            e.printStackTrace ();
         }
     }
 }
