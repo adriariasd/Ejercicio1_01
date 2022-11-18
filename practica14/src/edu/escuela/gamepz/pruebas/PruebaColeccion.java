@@ -70,7 +70,7 @@ public class PruebaColeccion {
             System.out.println(e);
         }
     }
-    private static void guardarObjetos(Collection c){
+    private static void guardarObjetos(TreeSet<Personaje> c){
         try{
             FileOutputStream f = new FileOutputStream("datArbol.ser");
             ObjectOutputStream s = new ObjectOutputStream (f);
