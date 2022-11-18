@@ -10,6 +10,9 @@ import java.util.LinkedList;
 import java.util.TreeSet;
 import java.util.Scanner;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.Collection;
 public class PruebaColeccion {
     public static void main(String[] args) {
@@ -59,12 +62,23 @@ public class PruebaColeccion {
         for (Personaje p : arr) {
             System.out.println(p);
         }
-        //guardarObjetos(f, arbol);
+        guardarObjetos(arbol);
     }
     private static void mostrarDirectorio(File f){
-        System.out.println(f.list());
+        for (String e : f.list()) {
+            System.out.println(e);
+        }
     }
-    private static void guardarObjetos(File f, Collection c){
-
+    private static void guardarObjetos(Collection c){
+        for (Object o : c) {
+            try{
+                FileOutputStream f = new FileOutputStream("datArbol.ser");
+                ObjectOutputStream s = new ObjectOutputStream (f);
+                s.writeObject (o);
+                s.close();
+            }catch(IOException e){
+                e.printStackTrace ();
+            }
+        }
     }
 }

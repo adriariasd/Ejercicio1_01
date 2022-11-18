@@ -1,6 +1,7 @@
 package edu.escuela.gamepz.personajes;
 import java.text.DecimalFormat;
-public abstract class Personaje implements Comparable<Personaje>{
+import java.io.Serializable;
+public abstract class Personaje implements Serializable, Comparable<Personaje>{
 	private String nombre;
 	protected int vida=0;
 	private float size;
