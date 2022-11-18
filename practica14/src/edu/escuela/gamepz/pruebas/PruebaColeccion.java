@@ -26,6 +26,7 @@ public class PruebaColeccion {
             System.exit(0);
         } 
         if(f.exists() && f.isDirectory()){
+            System.out.println("Directorio existe");
             mostrarDirectorio(f);
             System.exit(0);
         }
