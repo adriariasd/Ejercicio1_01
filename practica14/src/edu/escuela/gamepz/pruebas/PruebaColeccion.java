@@ -22,7 +22,7 @@ public class PruebaColeccion {
             System.exit(0);
         } 
         if(f.isDirectory()){
-            mostrarDirectorio();
+            mostrarDirectorio(f);
             System.exit(0);
         }
         Personaje[] datos = {
@@ -59,8 +59,11 @@ public class PruebaColeccion {
             System.out.println(p);
         }
         guardarObjetos(f,arbol);
-        public void mostrarDirectorio(){
-            
-        }
+    }
+    private static void mostrarDirectorio(File f){
+        System.out.println();
+    }
+    private static void guardarObjetos(File f, Collection c){
+
     }
 }
