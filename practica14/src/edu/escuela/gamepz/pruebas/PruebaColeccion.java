@@ -9,12 +9,22 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.TreeSet;
 import java.util.Scanner;
+import java.io.File;
 public class PruebaColeccion {
     public static void main(String[] args) {
         String path = System.getProperty("user.home") + System.getProperty("file.separator");
         Scanner s = new Scanner(System.in);
         String fname = s.nextLine();
         path += fname;
+        File f = new File(path);
+        if(f.exists()){
+            System.out.println("Archivo existe");
+            System.exit(0);
+        } 
+        if(f.isDirectory()){
+            mostrarDirectorio();
+            System.exit(0);
+        }
         Personaje[] datos = {
             new Planta("Fabian", Tablero.genVida(), MEDIO),
             new Planta("Bianca", Tablero.genVida()),
@@ -47,6 +57,10 @@ public class PruebaColeccion {
         Collections.sort(arr, new BySize());
         for (Personaje p : arr) {
             System.out.println(p);
+        }
+        guardarObjetos(f,arbol);
+        public void mostrarDirectorio(){
+            
         }
     }
 }
