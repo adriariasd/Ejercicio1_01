@@ -9,7 +9,7 @@ public class RunHilos{
         char ch1, ch2;
         String salida1, salida2;
         ch1 = (txt1 != null && txt1.getText().length() != 0)? txt1.getText().charAt(0):'E'; 
-        ch2 = (txt2 != null && txt2.getText().length() != 0)? txt2.getText().charAt(0):'E'; 
+        ch2 = (txt2 != null && txt2.getText().length() != 0)? txt2.getText().charAt(0):'M'; 
         salida1 = String.valueOf(ch1);
         salida2 = String.valueOf(ch2);
         elem1.setText(salida1);
