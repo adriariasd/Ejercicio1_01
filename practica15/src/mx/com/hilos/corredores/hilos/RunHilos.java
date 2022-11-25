@@ -4,7 +4,6 @@ import javax.swing.JTextField;
 import mx.com.hilos.corredores.hilos.Letra;
 public class RunHilos {
     public RunHilos(){
-
     }
     public static void iniciar(JTextField txt1, JTextField txt2, JLabel elem1, JLabel elem2){
         char ch1, ch2;
