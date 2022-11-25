@@ -3,11 +3,11 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.swing.BorderFactory;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.Dimension;
-import javax.swing.BorderFactory;
 import java.awt.FlowLayout;
 public class Ventana extends JFrame{
     private JLabel lblTitulo, lblElem1, lblElem2, hElem1, hElem2;
@@ -40,7 +40,9 @@ public class Ventana extends JFrame{
             public void actionPerformed(ActionEvent e){
                 btnStart.setEnabled(false);
                 //iniciar();
-                setTitle("Practica 15");
+            }
+        });
+        setTitle("Practica 15");
                 setLayout(new FlowLayout());
                 setSize(ancho,alto);
                 add(lblTitulo);
@@ -51,8 +53,5 @@ public class Ventana extends JFrame{
                 add(btnStart);
                 add(hElem1);
                 add(hElem2);
-            }
-        });
-
     }
 }
