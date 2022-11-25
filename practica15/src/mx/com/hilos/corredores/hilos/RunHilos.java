@@ -20,5 +20,11 @@ public class RunHilos {
         }
         salida1 = String.valueOf(ch1);
         salida2 = String.valueOf(ch2);
+        elem1.setText(salida1);
+        elem2.setText(salida2);
+        Letra hilo1(elem1, ch1);
+        Letra hilo2(elem2, ch2);
+        Thread run1 = new Thread(hilo1);
+        Thread run2 = new Thread(hilo2);
     }
 }
