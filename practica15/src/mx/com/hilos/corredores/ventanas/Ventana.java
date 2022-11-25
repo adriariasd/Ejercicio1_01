@@ -17,6 +17,7 @@ public class Ventana extends JFrame{
         initComponents();
     }
     public void initComponents(){
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         int ancho = 550;
         int alto = 250;
         Dimension lblDim = new Dimension(ancho-15,alto/10);
@@ -52,5 +53,6 @@ public class Ventana extends JFrame{
                 add(hElem2);
             }
         });
+
     }
 }
